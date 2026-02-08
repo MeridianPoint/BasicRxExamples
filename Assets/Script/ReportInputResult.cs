@@ -12,21 +12,21 @@ public class ReportInputResult : MonoBehaviour
         ErrorMessage.text = textMessage;
         ErrorMessage.gameObject.SetActive(true);
         CorrectIndicator.gameObject.SetActive(false);
-        ErrorMessage.gameObject.SetActive(true);
+        IncorrectIndicator.gameObject.SetActive(true);
     }
 
     public void DisplayCorrect()
     {
         ErrorMessage.gameObject.SetActive(false);
         CorrectIndicator.gameObject.SetActive(true);
-        ErrorMessage.gameObject.SetActive(false);
+        IncorrectIndicator.gameObject.SetActive(false);
     }
 
     public void DisplayNeutral()
     {
         ErrorMessage.gameObject.SetActive(false);
         CorrectIndicator.gameObject.SetActive(false);
-        ErrorMessage.gameObject.SetActive(false);
+        IncorrectIndicator.gameObject.SetActive(false);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,6 +34,6 @@ public class ReportInputResult : MonoBehaviour
     {
         ErrorMessage.gameObject.SetActive(false);
         CorrectIndicator.gameObject.SetActive(false);
-        ErrorMessage.gameObject.SetActive(false);
+        IncorrectIndicator.gameObject.SetActive(false);
     }
 }
